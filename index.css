@@ -1,0 +1,331 @@
+body{
+	margin:0; padding:0; box-sizing:border-box;
+	width:100vw; height:100vh;
+	background-color:black;
+	display:column; flex-direction:column;
+	justify-content:flex-start;
+	align-items:center; 
+}
+
+@font-face {
+    font-family: FiraSans Regular;
+    src: url(FiraSans-Regular.ttf);
+}
+
+#sitetop{
+	margin:0; padding:0;
+	height:90vh; width:100%; box-sizing:border-box;	
+	display:flex; flex-direction:row; justify-content:space-around; 
+	align-items:center;
+}
+
+#taskbar{
+	box-sizing:border-box; margin:0; padding:0;
+	width:5%; height:100%; display:flex; flex-direction:column;
+	justify-content:flex-start; align-items:center;
+}
+
+#applogo{
+	width:40px; height:40px; border-radius:50%;
+	background-color:rgb(0,180,0); margin:30px 0px 15px 0px;
+}
+
+.tasktabs{
+	width:30px; height:30px; border-radius:50%;
+	background-color:rgb(230,230,230); margin:10px 0px;
+}
+
+#mainbody{
+	box-sizing:border-box; margin:0; padding:0;
+	width:95%; height:100%;
+	display:grid; grid-gap:20px;
+	grid-template-rows:9% 44% 40%;
+	grid-template-columns:20% 32% 20% 23%; 
+}
+
+#topbar{
+	grid-column-start:1; grid-column-end:5;
+	grid-row-start:1; grid-row-end:2;
+	display:flex; flex-direction:row; align-items:center;
+	justify-content:space-around;
+}
+
+#search{
+	display:flex; flex-direction:row; align-items:center; justify-content:flex-start; color:white;
+	padding:10px 20px; font-size:14px; font-family: FiraSans Regular; background-color:rgb(30, 30, 30);
+	width:650px; height:auto; box-sizing:border-box; border-radius:20px;
+}
+
+#special, #settings{
+	width:40px; height:40px; border-radius:50%;
+	background-color:rgb(30, 30, 30);
+}
+
+#alerts{
+	position:relative;
+	width:40px; height:40px; border-radius:50%;
+	background-color:rgb(30, 30, 30);
+}
+
+#active{
+	position:absolute;
+	width:15px; height:15px; border-radius:50%;
+	background-color:rgb(200, 0, 0);
+
+}
+
+#account{
+	position:relative;
+	width:40px; height:40px; border-radius:50%;
+	background-color:rgb(0, 180, 0);
+}
+
+#genres{
+	grid-column-start:1; grid-column-end:4;
+	grid-row-start:2; grid-row-end:3;
+	display:flex; flex-direction:row;
+	justify-content:space-around; align-items:center;
+}
+
+.genrediv{
+	height:90%; width:200px; border-radius:15px;
+}
+
+#activity{
+	grid-column-start:4; grid-column-end:5;
+	grid-row-start:2; grid-row-end:4; box-sizing:border-box;
+	display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+	padding:15px 0px 10px 0px;
+}
+
+#actheader{
+	font-size:18px; font-family: FiraSans Regular; color:white;
+	margin:0px 0px 20px 0px; box-sizing:border-box;
+}
+
+.actrow{
+	width:95%; min-height:50px; max-height:50px; background-color:rgb(30, 30, 30);
+	display:flex; flex-direction:row; align-items:center;
+	justify-content:flex-start; margin:0px 0px 15px 0px;
+	border-radius:8px; box-sizing:border-box;
+}
+
+.actpic{
+	width:35px; height:35px; border-radius:50%; background-color:rgb(230, 230, 230);
+	margin:0px 10px 0px 8px;
+}
+
+.acttext{
+
+	display:flex; flex-direction:column; align-items:flex-start; justify-content:space-around;
+}
+
+.actname{
+	font-size:14px; font-family: FiraSans Regular; color:white;
+	margin:0px 0px 5px 0px;
+}
+
+.actsong{
+	font-size:12px; font-family: FiraSans Regular; color:white;
+}
+
+
+#discover{
+	grid-column-start:1; grid-column-end:2;
+	grid-row-start:3; grid-row-end:4;
+	display:flex; flex-direction:column; align-items:flex-start; justify-content:space-around;
+}
+
+#disheader{
+	font-size:16px; font-family: FiraSans Regular; color:white;
+	margin:0px 0px 5px 0px; box-sizing:border-box;
+}
+
+#disbody{
+	width:100%; height:95%; margin:0; box-sizing:border-box;
+	display:flex; flex-direction:row; flex-wrap:wrap;
+	align-items:flex-start; justify-content:space-around;
+}
+
+.disdiv{
+	min-width:50px; max-width:auto;
+	background-color:rgb(30, 30, 30); color:white; padding:8px 20px;
+	font-size:16px; font-family: FiraSans Regular; color:white; border-radius:20px;
+	display:flex; flex-direction:row; align-items:center; justify-content:space-around;
+}
+
+
+
+#playlists{
+	grid-column-start:2; grid-column-end:3;
+	grid-row-start:3; grid-row-end:4;
+	display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+	overflow-y:hidden;
+}
+
+#playheader{
+	font-size:16px; font-family: FiraSans Regular; color:white;
+	margin:0px 0px 15px 0px; box-sizing:border-box;
+}
+
+.playrow{
+	width:98%; min-height:60px; max-height:60px; background-color:rgb(30, 30, 30);
+	display:flex; flex-direction:row; align-items:center;
+	justify-content:flex-start; margin:0px 0px 15px 0px;
+	border-radius:8px; box-sizing:border-box;
+}
+
+.playpic{
+	width:40px; height:40px; border-radius:10px; background-color:rgb(230, 230, 230);
+	margin:0px 15px 0px 15px;
+}
+
+.playtext{
+	width:190px;
+	display:flex; flex-direction:column; align-items:flex-start; justify-content:space-around;
+}
+
+.playname{
+	font-size:14px; font-family: FiraSans Regular; color:white;
+	margin:0px 0px 5px 0px; box-sizing:border-box;
+}
+
+.playsong{
+	font-size:12px; font-family: FiraSans Regular; color:white;
+	box-sizing:border-box;
+}
+
+.numofplays{
+	font-size:14px; font-family: FiraSans Regular; color:white;
+	box-sizing:border-box;
+}
+
+.like{
+	width:35px; height:35px; border-radius:50%;
+	background-color:rgb(182, 69, 99); margin-left:15px;
+}
+
+.listtoggle{
+	width:35px; height:35px; border-radius:50%;
+	background-color:rgb(0, 180, 0); margin-left:15px;
+}
+
+
+#artists{
+	grid-column-start:3; grid-column-end:4;
+	grid-row-start:3; grid-row-end:4;
+	display:flex; flex-direction:column; align-items:flex-start; justify-content:flex-start;
+	overflow-y:hidden;
+}
+
+#artheader{
+	font-size:16px; font-family: FiraSans Regular; color:white;
+	margin:0px 0px 5px 0px; box-sizing:border-box; 
+}
+
+#artbody{
+	width:100%; height:95%; margin:0; box-sizing:border-box;
+	display:flex; flex-direction:row; flex-wrap:wrap;
+	align-items:flex-start; justify-content:space-between;
+}
+
+.artdiv{
+	width:120px; height:120px; border-radius:5px;
+	margin:12px 0px; box-sizing:border-box;
+}
+
+
+/*Mini player section*/
+#miniplayer{
+	background-color:rgb(15, 15, 15); margin:0; padding:0;
+	height:10vh; width:100%; box-sizing:border-box;
+	display:flex; flex-direction:row; justify-content:flex-start;
+	align-items:center;
+	
+}
+
+#minimusicpic{
+	width:50px; height:50px; margin:0px 15px 0px 20px;
+	border-radius:10px; background-color:grey; 
+}
+
+#minitext{
+	width:; height:auto;
+	display:flex; flex-direction:column; width:350px;
+	justify-content:flex-start; align-items:flex-start;
+}
+
+#minimusicname{
+	font-family: FiraSans Regular;
+	color:white; font-size:16px;
+}
+
+#minimusicartist{
+	font-family: FiraSans Regular;
+	color:white; font-size:14px;
+}
+
+#buttons{
+	height:auto; width:170px;
+	display:flex; flex-direction:row;
+	align-items:center; justify-content:space-around; 
+}
+
+#forward, #backward{
+	width:40px; height:40px; border-radius:50%;
+	background-color:rgb(50, 50, 50);
+}
+
+#pauseplay{
+	width:50px; height:50px; border-radius:50%;
+	background-color:rgb(0, 180, 0);
+}
+
+#center{
+	display:flex; flex-direction:row; width:350px;
+	align-items:center; justify-content:space-around;
+	box-sizing:border-box; margin-left:60px;
+}
+
+#timelapse, #timetotal{
+	font-family: FiraSans Regular;
+	color:white; font-size:14px;
+}
+
+#stator{
+	width:250px; height:2px; border:1px rgb(50, 50, 50) solid; border-radius:5px;
+	display:flex; flex-direction:row; justify-content:flex-start; align-items:center;
+	background-color:rgb(50, 50, 50); 
+}
+
+#motor{
+	width:45%; height:2px; border:1px rgb(0, 180, 0) solid; border-radius:5px;
+	background-color:rgb(0, 180, 0);
+}
+
+#volume{
+	display:flex; flex-direction:row; width:150px;
+	align-items:center; justify-content:space-around;
+	box-sizing:border-box; margin-left:60px;
+}
+
+#volicon{
+	border-radius:50%; width:35px; height:35px;
+	background-color:rgb(0, 180, 0);
+}
+
+#volstator{
+	width:100px; height:2px; border:1px rgb(50, 50, 50) solid; border-radius:5px;
+	display:flex; flex-direction:row; justify-content:flex-start; align-items:center;
+	background-color:rgb(50, 50, 50); 
+}
+
+#volmotor{
+	width:70%; height:2px; border:1px rgb(0, 180, 0) solid; border-radius:5px;
+	background-color:rgb(0, 180, 0);
+}
+
+#more{
+	border-radius:50%; width:35px; height:35px;
+	background-color:rgb(50, 50, 50); margin-left:60px;
+}
